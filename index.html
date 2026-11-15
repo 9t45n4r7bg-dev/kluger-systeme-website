@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kluger Systeme · KI für das produzierende Gewerbe</title>
-<meta name="description" content="Kluger Systeme aus Paderborn entwickelt KI-Systeme für das produzierende Gewerbe: Neukundengewinnung, Compliance-Automation und Wissensmanagement.">
+<title>Kluger Systeme · KI für den Mittelstand</title>
+<meta name="description" content="Kluger Systeme aus Paderborn entwickelt KI-Systeme für den Mittelstand: Neukundengewinnung, Compliance-Automation und KI-Prozessautomatisierung.">
 <link rel="canonical" href="https://kluger-systeme.de/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
-<meta property="og:title" content="Kluger Systeme · KI für das produzierende Gewerbe">
-<meta property="og:description" content="Kluger Systeme aus Paderborn entwickelt KI-Systeme für das produzierende Gewerbe: Neukundengewinnung, Compliance-Automation und Wissensmanagement.">
+<meta property="og:title" content="Kluger Systeme · KI für den Mittelstand">
+<meta property="og:description" content="Kluger Systeme aus Paderborn entwickelt KI-Systeme für den Mittelstand: Neukundengewinnung, Compliance-Automation und KI-Prozessautomatisierung.">
 <meta property="og:url" content="https://kluger-systeme.de/">
 <meta name="theme-color" content="#F3F5F1">
 <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -468,33 +468,6 @@ section { position: relative; }
 
 /* ---------- materials ---------- */
 
-.matter { border-bottom: 1px solid var(--line); }
-.matter__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 4fr) minmax(0, 7fr);
-  gap: clamp(40px, 6vw, 96px);
-  padding-block: var(--pad-y);
-}
-.matter__head p { margin-top: 24px; color: var(--ink-2); max-width: 44ch; }
-.matter__list {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
-  align-self: start;
-}
-.matter__list li {
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding: 22px 18px 24px;
-  min-height: 132px;
-  display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;
-  background: transparent;
-  transition: background-color .4s var(--ease);
-}
-.matter__list li:hover { background: var(--paper); }
-.matter__list b { font-weight: 500; font-size: 17px; letter-spacing: -0.015em; line-height: 1.2; hyphens: manual; }
-.matter__list span { font-size: 14px; color: var(--ink-2); line-height: 1.4; }
 
 /* ---------- photo band ---------- */
 
@@ -755,9 +728,7 @@ section { position: relative; }
 @media (max-width: 1100px) {
   .nav { gap: 20px; }
   .fields__head, .band__copy { grid-template-columns: 1fr; }
-  .matter__grid { grid-template-columns: 1fr; }
-  .matter__head p { max-width: 60ch; }
-}
+    }
 
 @media (max-width: 960px) {
   .top__in { gap: 12px; }
@@ -799,8 +770,7 @@ section { position: relative; }
   .pin--a { --x: 5%; --y: 7%; }
   .pin--b { --x: 34%; --y: 19%; }
   .pin--c { --x: 5%; --y: 86%; }
-  .matter__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .close__panel { margin-inline: calc(var(--pad-x) * -1 + 8px); }
+    .close__panel { margin-inline: calc(var(--pad-x) * -1 + 8px); }
 }
 
 @media (max-width: 520px) {
@@ -857,9 +827,9 @@ section { position: relative; }
     <div class="wrap hero__copy">
       <h1 id="hero-title" class="duo">
         <span class="duo__a">Ein KI-Startup</span>
-        <span class="duo__b">für das produzierende Gewerbe.</span>
+        <span class="duo__b">für den Mittelstand.</span>
       </h1>
-      <p class="hero__lead">Kluger Systeme aus Paderborn entwickelt KI-Systeme, die neue Kunden finden, Compliance-Arbeit automatisieren und das Erfahrungswissen Ihres Werks als nutzbare Daten sichern.</p>
+      <p class="hero__lead">Kluger Systeme aus Paderborn entwickelt KI-Systeme, die neue Kunden finden, Compliance-Arbeit automatisieren und wiederkehrende Abläufe in Ihrem Unternehmen spürbar beschleunigen.</p>
       <div class="hero__act">
         <a class="btn btn--ink" href="mailto:kontakt@kluger-systeme.de?subject=Erstgespr%C3%A4ch" data-book>
           <span>Erstgespräch buchen</span>
@@ -881,7 +851,7 @@ section { position: relative; }
         <ul class="pins" aria-label="Unsere drei Felder">
           <li class="pin pin--a"><a href="#neukundengewinnung" data-pin><i aria-hidden="true"></i><span>Neukundengewinnung</span></a></li>
           <li class="pin pin--b"><a href="#compliance" data-pin><i aria-hidden="true"></i><span>Compliance-Automation</span></a></li>
-          <li class="pin pin--c"><a href="#wissen" data-pin><i aria-hidden="true"></i><span>KI-Wissensmanagement</span></a></li>
+          <li class="pin pin--c"><a href="#automatisierung" data-pin><i aria-hidden="true"></i><span>Prozessautomatisierung</span></a></li>
         </ul>
       </figure>
     </div>
@@ -889,15 +859,15 @@ section { position: relative; }
 
   <section class="week" aria-labelledby="week-title">
     <div class="wrap week__grid">
-      <h2 id="week-title" class="lit" data-lit>Ihre Anlagen laufen. Das Büro stapelt. Im produzierenden Gewerbe geht jede Woche Zeit verloren. Nicht an der Linie, sondern drumherum.</h2>
+      <h2 id="week-title" class="lit" data-lit>Das Kerngeschäft läuft. Das Büro stapelt. In vielen Unternehmen geht jede Woche Zeit verloren. Nicht bei der eigentlichen Arbeit, sondern drumherum.</h2>
       <div class="week__log">
-        <p class="week__cap">Eine typische Woche neben der Linie</p>
+        <p class="week__cap">Eine typische Woche neben dem Kerngeschäft</p>
         <ul>
-          <li><span>Auf neue Kontakte von der Messe hoffen</span><em>Vertrieb</em></li>
-          <li><span>Konformitätserklärung von Hand ausfüllen</span><em>Qualität</em></li>
-          <li><span>Neue EU-Vorgaben zusammensuchen</span><em>Compliance</em></li>
-          <li><span>Den Einrichter anrufen, der die Anlage kennt</span><em>Produktion</em></li>
-          <li><span>Sonderanfertigung zum dritten Mal kalkulieren</span><em>Innendienst</em></li>
+          <li><span>Auf Empfehlungen und neue Anfragen hoffen</span><em>Vertrieb</em></li>
+          <li><span>Kundenfragebögen von Hand ausfüllen</span><em>Compliance</em></li>
+          <li><span>Neue Vorgaben und Fristen zusammensuchen</span><em>Verwaltung</em></li>
+          <li><span>Belege und Unterlagen hinterhertelefonieren</span><em>Buchhaltung</em></li>
+          <li><span>Dieselben Daten in drei Systeme tippen</span><em>Innendienst</em></li>
         </ul>
       </div>
     </div>
@@ -922,11 +892,11 @@ section { position: relative; }
             <path d="M42 22c4 0 6 3 6 7s-3 6-7 6c-3 0-6-3-5-7 0-3 3-6 6-6Z"/>
           </svg>
           <h3 id="f1-title">Neukundengewinnung</h3>
-          <p class="field__claim">Planbare Neukunden statt Messe-Zufall</p>
-          <p class="field__text">Mit KI-gestützter Recherche finden wir Unternehmen, die zu Ihrem Portfolio passen, ob Hersteller, Weiterverarbeiter oder Händler. Einkauf und Geschäftsführung sprechen wir gezielt an, in der Sprache Ihrer Abnehmer. Sie führen nur noch die Gespräche.</p>
+          <p class="field__claim">Planbare Neukunden statt Zufallstreffer</p>
+          <p class="field__text">Mit KI-gestützter Recherche finden wir Unternehmen, die zu Ihrem Angebot passen. Die Entscheider sprechen wir gezielt an, in der Sprache Ihrer Kunden. Sie führen nur noch die Gespräche.</p>
           <ul class="checks">
-            <li>Jede Zielfirma gegen Ihr Portfolio geprüft</li>
-            <li>Ansprache in der Sprache Ihrer Abnehmer</li>
+            <li>Jede Zielfirma gegen Ihr Angebot geprüft</li>
+            <li>Ansprache in der Sprache Ihrer Kunden</li>
             <li>Erstgespräche mit Entscheidern im Kalender</li>
           </ul>
           <p class="field__for">Für Geschäftsführung und Vertrieb</p>
@@ -942,64 +912,42 @@ section { position: relative; }
             <path d="M24 15c9-1 16 5 16 14 1 9-6 15-14 15-8 1-14-6-14-14 0-8 5-14 12-15Z"/>
             <path d="M22 23c4 0 7 3 7 7 0 3-3 6-7 6-3 0-6-3-6-6 0-4 3-7 6-7Z"/>
           </svg>
-          <h3 id="f2-title">Wissens- &amp; Compliance-Automation</h3>
+          <h3 id="f2-title">Compliance-Automation</h3>
           <p class="field__claim">Nachweise ohne Ordnerberge</p>
-          <p class="field__text">Konformitätserklärungen, Kundenfragebögen, Audits nach ISO und Branchenstandards, neue EU-Vorgaben wie die Verpackungsverordnung PPWR. Wir bauen Ihre Nachweise einmal sauber auf und automatisieren, dass sie aktuell bleiben. Die Freigabe bleibt bei Ihnen.</p>
+          <p class="field__text">Datenschutz-Dokumentation, Kundenfragebögen, Audits nach ISO, Nachweise für Auftraggeber, Banken und Versicherer. Wir bauen Ihre Unterlagen einmal sauber auf und automatisieren, dass sie aktuell bleiben. Die Freigabe bleibt bei Ihnen.</p>
           <ul class="checks">
             <li>Kundenfragebögen aus einer gepflegten Quelle beantwortet</li>
             <li>Audit-Unterlagen jederzeit griffbereit</li>
             <li>Neue Vorgaben im Blick, bevor sie drängen</li>
           </ul>
-          <p class="field__for">Für Qualitätsmanagement und Compliance</p>
+          <p class="field__for">Für Geschäftsführung, Qualität und Compliance</p>
           <a class="btn btn--line-dark" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="Compliance-Automation">
             <span>Erstgespräch: Compliance</span>
             <span class="btn__tile" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M6 14 14 6M7.5 6H14v6.5"/></svg></span>
           </a>
         </article>
 
-        <article class="field" id="wissen" aria-labelledby="f3-title">
+        <article class="field" id="automatisierung" aria-labelledby="f3-title">
           <svg class="field__glyph" viewBox="0 0 64 64" aria-hidden="true">
             <path d="M31 6c15 0 27 11 27 26S46 58 31 58C17 58 6 47 6 32 6 18 17 6 31 6Z"/>
             <path d="M32 26c8 0 14 6 14 13s-6 12-14 12c-7 0-13-5-13-12s6-13 13-13Z"/>
             <path d="M32 34c3 0 5 2 5 5s-2 5-5 5-5-2-5-5 2-5 5-5Z"/>
           </svg>
-          <h3 id="f3-title">KI-Wissensmanagement</h3>
-          <p class="field__claim">Fachwissen, das im Betrieb bleibt</p>
-          <p class="field__text">Wie die Linie eingestellt wird, welche Rezeptur bei welchem Kunden läuft, was bei Störungen an der Maschine hilft. Wir machen dieses Erfahrungswissen für Ihr Team und Ihre KI nutzbar, auf Wunsch vollständig lokal betrieben.</p>
+          <h3 id="f3-title">KI-Prozess&shy;optimierung &amp; Automatisierung</h3>
+          <p class="field__claim">Weniger Handarbeit in wiederkehrenden Abläufen</p>
+          <p class="field__text">Belege erfassen und zuordnen, Anfragen vorsortieren, Angebote vorbereiten, Daten zwischen Systemen übertragen. Wir finden die Abläufe, die heute am meisten Zeit kosten, und automatisieren sie mit KI. Auf Wunsch vollständig lokal betrieben.</p>
           <ul class="checks">
-            <li>Erfahrungswissen strukturiert gesichert</li>
-            <li>Antworten für Produktion, Service und Innendienst</li>
+            <li>Vorab berechnet, wie viel Zeit sich einsparen lässt</li>
+            <li>Wiederkehrende Aufgaben automatisch erledigt</li>
             <li>Auf Wunsch bleiben Ihre Daten in Ihrem Haus</li>
           </ul>
-          <p class="field__for">Für Produktion, Technik und Service</p>
-          <a class="btn btn--line-dark" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="KI-Wissensmanagement">
-            <span>Erstgespräch: Wissen</span>
+          <p class="field__for">Für Geschäftsführung, Verwaltung und Fachabteilungen</p>
+          <a class="btn btn--line-dark" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="Prozessautomatisierung">
+            <span>Erstgespräch: Automatisierung</span>
             <span class="btn__tile" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M6 14 14 6M7.5 6H14v6.5"/></svg></span>
           </a>
         </article>
       </div>
-    </div>
-  </section>
-
-  <section class="matter" aria-labelledby="matter-title">
-    <div class="wrap matter__grid">
-      <div class="matter__head">
-        <h2 id="matter-title" class="duo">
-          <span class="duo__a">Unterschiedliche Produkte.</span>
-          <span class="duo__b">Dieselben Engpässe.</span>
-        </h2>
-        <p>Wir arbeiten ausschließlich für Unternehmen, die produzieren. Ob Verpackung, Kunststoff oder Maschinenbau, überall kosten Vertrieb, Nachweise und verstreutes Wissen Zeit. Genau dort setzen unsere Systeme an.</p>
-      </div>
-      <ul class="matter__list">
-        <li><b>Verpackung</b><span>Wellpappe, Faltschachtel, Folie</span></li>
-        <li><b>Kunststoff&shy;verarbeitung</b><span>Spritzguss, Extrusion, Compounding</span></li>
-        <li><b>Metall&shy;verarbeitung</b><span>Zerspanung, Blech, Guss</span></li>
-        <li><b>Maschinen- und Anlagenbau</b><span>Sondermaschinen, Komponenten</span></li>
-        <li><b>Lebensmittel</b><span>Herstellung, Abfüllung, Rezepturen</span></li>
-        <li><b>Papier und Druck</b><span>Etiketten, Druckerzeugnisse, Veredelung</span></li>
-        <li><b>Elektrotechnik</b><span>Baugruppen, Schaltanlagen</span></li>
-        <li><b>Chemie und Kosmetik</b><span>Rezepturen, Lohnfertigung</span></li>
-      </ul>
     </div>
   </section>
 
@@ -1010,7 +958,7 @@ section { position: relative; }
         <span class="duo__a">Gewachsenes Wissen.</span>
         <span class="duo__b">Lernende Systeme.</span>
       </h2>
-      <p>Ihr Werk hat sein Wissen über Jahrzehnte aufgebaut. Wir bauen KI, die daraus lernt und es für Vertrieb, Qualität und Produktion nutzbar macht.</p>
+      <p>Ihr Unternehmen hat sein Wissen über Jahre aufgebaut. Wir bauen KI, die daraus lernt und es für Vertrieb, Verwaltung und Fachabteilungen nutzbar macht.</p>
     </div>
   </section>
 
@@ -1026,7 +974,7 @@ section { position: relative; }
           <path class="steps__ink" d="M0 70 C 80 70, 100 30, 150 30 S 260 92, 330 92 S 400 40, 450 40 S 560 96, 640 96 S 700 34, 750 34 S 860 86, 940 86 S 1000 44, 1050 44 S 1150 76, 1200 76" data-track-ink/>
         </svg>
         <ol class="steps__list">
-          <li data-step><i aria-hidden="true"></i><h3>Erstgespräch</h3><p>Dreißig Minuten. Wo verliert Ihr Werk heute am meisten Zeit oder Aufträge?</p></li>
+          <li data-step><i aria-hidden="true"></i><h3>Erstgespräch</h3><p>Dreißig Minuten. Wo verliert Ihr Unternehmen heute am meisten Zeit oder Aufträge?</p></li>
           <li data-step><i aria-hidden="true"></i><h3>Analyse</h3><p>Wir sehen uns den Ablauf genau an und zeigen, was sich wirklich lohnt.</p></li>
           <li data-step><i aria-hidden="true"></i><h3>Umsetzung</h3><p>Wir bauen und betreiben das System, mit möglichst wenig Aufwand für Ihre IT.</p></li>
           <li data-step><i aria-hidden="true"></i><h3>Übergabe</h3><p>Ihr Team steuert das System selbst. Wir bleiben auf Wunsch an Bord.</p></li>
@@ -1046,11 +994,11 @@ section { position: relative; }
           <span class="duo__a">Entstanden in der Praxis.</span>
           <span class="duo__b">Gebaut als Technologie.</span>
         </h2>
-        <p>Kluger Systeme ist ein KI-Startup aus Paderborn. Die Idee entstand nah an der Industrie. In vielen Gesprächen mit Geschäftsführern, Vertriebs- und Qualitätsleitern produzierender Unternehmen tauchten immer dieselben Engpässe auf. Gute Leute verbringen ihre Zeit mit Recherche, Formularen und der Suche nach Wissen, das nur ein Kollege im Haus kennt.</p>
+        <p>Kluger Systeme ist ein KI-Startup aus Paderborn. Die Idee entstand nah am Mittelstand. In vielen Gesprächen mit Geschäftsführern, Vertriebs- und Qualitätsleitern tauchten immer dieselben Engpässe auf, ob im Produktionsbetrieb, im Handel oder in der Kanzlei. Gute Leute verbringen ihre Zeit mit Recherche, Formularen und der Suche nach Wissen, das nur ein Kollege im Haus kennt.</p>
         <p>Wir lösen das nicht mit Beratern, sondern mit Software. Wir entwickeln KI-Systeme, die sich an Ihre Abläufe anpassen, mit Ihren Daten arbeiten und auf Wunsch vollständig in Ihrem Haus laufen. Als Startup arbeiten wir schnell und bleiben vom ersten Gespräch bis zur Übergabe direkt erreichbar.</p>
         <dl class="facts">
           <div><dt>Sitz</dt><dd>Paderborn</dd></div>
-          <div><dt>Fokus</dt><dd>Produzierendes Gewerbe im DACH-Raum</dd></div>
+          <div><dt>Fokus</dt><dd>Kleine und mittlere Unternehmen im DACH-Raum</dd></div>
           <div><dt>Technologie</dt><dd>Eigene KI-Systeme, auf Wunsch lokal betrieben</dd></div>
           <div><dt>Unternehmen</dt><dd>Eine Marke der <a href="https://scaleunit.de" rel="noopener">ScaleUnit GmbH</a></dd></div>
         </dl>
@@ -1070,11 +1018,11 @@ section { position: relative; }
       <div class="faq__list">
         <details>
           <summary>Was heißt KI-Startup bei Ihnen konkret?</summary>
-          <p>Wir sind ein junges Unternehmen und entwickeln KI-Systeme für das produzierende Gewerbe. Für Sie heißt das kurze Wege und Systeme, die auf Ihre Abläufe zugeschnitten sind, statt Standardsoftware von der Stange.</p>
+          <p>Wir sind ein junges Unternehmen und entwickeln KI-Systeme für den Mittelstand. Für Sie heißt das kurze Wege und Systeme, die auf Ihre Abläufe zugeschnitten sind, statt Standardsoftware von der Stange.</p>
         </details>
         <details>
           <summary>Für welche Unternehmen sind Ihre Leistungen gedacht?</summary>
-          <p>Für mittelständische Unternehmen aus dem produzierenden Gewerbe in Deutschland, Österreich und der Schweiz, typischerweise ab rund 50 Mitarbeitenden.</p>
+          <p>Für kleine und mittlere Unternehmen in Deutschland, Österreich und der Schweiz, vom Produktionsbetrieb über Handel und Dienstleistung bis zur Steuerkanzlei.</p>
         </details>
         <details>
           <summary>Müssen wir alle drei Felder buchen?</summary>
@@ -1082,11 +1030,11 @@ section { position: relative; }
         </details>
         <details>
           <summary>Wo bleiben unsere Daten?</summary>
-          <p>Beim KI-Wissensmanagement setzen wir auf Wunsch auf lokal betriebene KI-Modelle. Ihr Know-how verlässt dann Ihr Haus nicht.</p>
+          <p>Bei der Prozessautomatisierung setzen wir auf Wunsch auf lokal betriebene KI-Modelle. Ihre Daten verlassen dann Ihr Haus nicht.</p>
         </details>
         <details>
-          <summary>Ersetzen Sie unseren Zertifizierer oder Rechtsberater?</summary>
-          <p>Nein. Wir bereiten Nachweise, Dokumentation und Antworten vor. Fachliche Freigabe und Zertifizierung bleiben bei Ihnen und den zuständigen Stellen.</p>
+          <summary>Ersetzen Sie Steuerberater, Zertifizierer oder Rechtsberater?</summary>
+          <p>Nein. Wir automatisieren Vorarbeiten wie Belegerfassung, Dokumentation und Antworten auf Fragebögen. Steuer- und Rechtsberatung, fachliche Freigabe und Zertifizierung bleiben bei Ihnen und den zuständigen Fachleuten.</p>
         </details>
         <details>
           <summary>Wie geht es nach dem Erstgespräch weiter?</summary>
@@ -1108,11 +1056,11 @@ section { position: relative; }
           <span class="duo__a">Was soll als Erstes</span>
           <span class="duo__b">wachsen?</span>
         </h2>
-        <p>In dreißig Minuten klären wir, wo in Ihrem Werk der größte Hebel liegt und ob wir der richtige Partner dafür sind. Unverbindlich, per Video oder Telefon.</p>
+        <p>In dreißig Minuten klären wir, wo in Ihrem Unternehmen der größte Hebel liegt und ob wir der richtige Partner dafür sind. Unverbindlich, per Video oder Telefon.</p>
         <ul class="topics" aria-label="Thema wählen">
           <li><a class="topic" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="Neukundengewinnung">Neukundengewinnung</a></li>
           <li><a class="topic" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="Compliance-Automation">Compliance-Automation</a></li>
-          <li><a class="topic" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="KI-Wissensmanagement">KI-Wissensmanagement</a></li>
+          <li><a class="topic" href="mailto:kontakt@kluger-systeme.de" data-book data-topic="Prozessautomatisierung">Prozessautomatisierung</a></li>
         </ul>
         <a class="btn btn--ink" href="mailto:kontakt@kluger-systeme.de?subject=Erstgespr%C3%A4ch" data-book>
           <span>Erstgespräch buchen</span>
@@ -1155,7 +1103,7 @@ const BOOKING = {
   allgemein: "",
   "Neukundengewinnung": "",
   "Compliance-Automation": "",
-  "KI-Wissensmanagement": ""
+  "Prozessautomatisierung": ""
 };
 const EMAIL = "kontakt@kluger-systeme.de";
 
